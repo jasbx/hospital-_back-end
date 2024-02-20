@@ -1,0 +1,71 @@
+
+{% block ok %} {% endblock ok %}
+{% load static%}
+
+<link rel="stylesheet" href="{% static 'Css\style1.css'%}">
+<style>
+  body{
+background-color: #fff;
+  }
+</style>
+  
+  
+   
+ <header class="Header">
+
+<script src="https://kit.fontawesome.com/a2673a891a.js" crossorigin="anonymous"></script>
+   <a class="logo" href="#" style="font-style: italic;"><i class="fa-solid fa-heart-pulse"></i>medical</a>
+   <br>
+
+    <div class="dropdown">
+      <p class="p">our serves</p>
+         <div class="dropdown-content">
+         <a class="a" href="{% url "doctor" %}">Expert Doctore</a>
+         <a class="a" href="{% url "admin" %}">Login admin</a>
+         <a class="a" href="#">conect with us</a>
+       
+          
+           
+         </div>
+       </div>
+      
+       <br>
+  
+    
+      
+    <nav class="navbar">
+    
+      
+        <a href="{% url "home" %}">home</a>
+        <a href="{% url "serv" %}">services</a>
+        <a href="{% url "filter" %}">search for doctors</a>
+        <a href="{% url "about" %}">about</a>
+      
+        <a href="{% url "blog" %}">blogs</a>
+        <a href="{% url "login" %}">book</a>
+      
+    
+    </nav>
+    
+
+  
+
+  </div>
+  </body>
+
+     </header>
+    
+<script>
+
+
+ 
+
+
+   
+  
+   
+  
+
+  </script>
+     {% include "conect.html" %}
+     
